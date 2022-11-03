@@ -1,5 +1,10 @@
+import { useId } from "react";
+
 function InputForm(props) {
-  const id = "myId";
+  // const id = "myId";
+
+  const id = useId();
+  console.log(id);
   return (
     <div className="inputForm">
       <label htmlFor={id}>{props.label}</label>
